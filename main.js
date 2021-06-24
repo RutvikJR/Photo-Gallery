@@ -12,7 +12,7 @@ for (i = 1; i < img.length; i++) {
         console.log(imgno + title);
         if (imgno != '') {
             document.getElementById("display").style.display = "flex";
-            document.getElementById("displayimg").src = "displayimage/" + imgno + ".jpg";
+            document.getElementById("displayimg").src = "img/" + imgno + ".jpg";
             document.getElementById("displaytitle").innerText = title;
         }
     });
@@ -24,7 +24,7 @@ document.getElementById("prev").children[0].addEventListener('click', () => {
     }
     var newimgno = parseInt(imgno) - 1;
     imgno = newimgno.toString();
-    document.getElementById("displayimg").src = "displayimage/" + imgno + ".jpg";
+    document.getElementById("displayimg").src = "img/" + imgno + ".jpg";
     title = document.getElementsByClassName("img" + imgno)[0].children[0].innerText;
     document.getElementById("displaytitle").innerText = title;
 
