@@ -36,7 +36,7 @@ document.getElementById("next").addEventListener('click', () => {
     }
     var newimgno = parseInt(imgno) + 1;
     imgno = newimgno.toString();
-    document.getElementById("displayimg").src = "displayimage/" + imgno + ".jpg";
+    document.getElementById("displayimg").src = "img/" + imgno + ".jpg";
     title = document.getElementsByClassName("img" + imgno)[0].children[0].innerText;
     document.getElementById("displaytitle").innerText = title;
 });
